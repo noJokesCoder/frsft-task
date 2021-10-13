@@ -1,0 +1,71 @@
+@import "./../../App-styles.scss";
+
+.grid {
+  width: 100%;
+  background-color: $backgroundDark;
+  padding-bottom: 194px;
+
+  &-button {
+    display: none;
+  }
+}
+.slideUp {
+  background-attachment: scroll;
+  overflow: auto;
+  background-clip: border-box;
+  padding-bottom: 16px;
+}
+.slideDown {
+  background-attachment: scroll;
+  overflow: auto;
+  padding-bottom: 16px;
+  transform: scroll(100px);
+  transition: all 2s;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 45px;
+  }
+  .slideUp {
+    padding-bottom: 8px;
+  }
+  .slideUp img {
+    height: 230px;
+  }
+  .slideDown img {
+    object-fit: scale-down;
+    height: 115px;
+  }
+  .grid-button {
+    display: block;
+    width: 54%;
+    max-width: 172px;
+    height: 40px;
+    background-color: $accentGreen;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .grid-button a {
+    color: $fontDarkButton;
+    text-decoration: none;
+    font-weight: 800;
+  }
+}
+@media screen and (max-width: 375px) {
+  .slideUp {
+    padding-bottom: 2px;
+  }
+  .slideUp img {
+    height: 134px;
+  }
+  .slideDown img {
+    object-fit: scale-down;
+    height: 67px;
+  }
+}

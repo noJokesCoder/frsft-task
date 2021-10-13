@@ -1,0 +1,68 @@
+@import "./../../App-styles.scss";
+
+.container {
+  width: 80%;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.header-text {
+  background-color: $backgroundDark;
+  margin: 0;
+
+  &-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0;
+    margin: 0;
+  }
+  &__headline {
+    width: 55%;
+    max-width: 430px;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      line-height: 101%;
+
+      span {
+        color: $accentGreen;
+      }
+    }
+  }
+  &__paragraph {
+    color: $fontWhite;
+    width: 35%;
+    max-width: 576px;
+    max-height: 111px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-text-wrap {
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 0 20px 0;
+  }
+
+  .header-text__headline {
+    width: 100%;
+    max-width: 100%;
+  }
+  .header-text__paragraph {
+    padding-top: 24px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header-text {
+    &-wrap {
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 0 40px 0;
+    }
+  }
+}

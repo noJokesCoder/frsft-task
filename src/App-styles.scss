@@ -1,0 +1,63 @@
+$accentGreen: rgba(24, 232, 164, 1);
+$backgroundDark: rgba(0, 20, 39, 1);
+$backgroundWhite: #ffffff;
+$backgroundWhiter: rgba(255, 255, 255, 0.8);
+$backgroundLightGrey: rgba(213, 212, 217, 1);
+$backgroundDarkGrey: rgba(174, 169, 168, 1);
+
+@mixin darkHeadline {
+  font-weight: 900;
+  font-size: 62px;
+  line-height: 90%;
+  color: #202523;
+  letter-spacing: -1px;
+}
+
+//font variables
+$fontWhite: #ffffff;
+$fontDarkButton: #020213;
+
+// TODO fix fonts!!!
+// @font-face {
+//   font-family: Helvetica Now;
+//   src: url(./font/Monotype\ \ -\ Helvetica\ Now\ Display.otf);
+
+// }
+
+* {
+  box-sizing: border-box;
+  font-family: "Abel", serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1 {
+  font-size: 54px;
+  color: $fontWhite;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 728px;
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    max-width: 280px;
+    width: 91%;
+    margin: 0 auto;
+  }
+}

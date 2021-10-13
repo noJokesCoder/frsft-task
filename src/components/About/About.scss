@@ -1,0 +1,74 @@
+@import "./../../App-styles.scss";
+
+.about {
+  background-color: $backgroundWhite;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 100px 0;
+
+  &-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+  }
+  &__headline {
+    h2 {
+      @include darkHeadline;
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    height: 145px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+
+    p {
+      font-size: 16px;
+      color: #545460;
+      line-height: 180%;
+      margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    height: 411px;
+    padding: 80px 0;
+  }
+  .about__headline {
+    text-align: left;
+  }
+
+  .about__headline h2 {
+    font-size: 32px;
+  }
+  .about-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 90%;
+  }
+  .about__text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about {
+    height: 600px;
+    padding: 40px 0;
+  }
+  .about__headline {
+    height: 58px;
+    margin-bottom: 40px;
+  }
+
+  .about__text {
+    flex-direction: column;
+  }
+}

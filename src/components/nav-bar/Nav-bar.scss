@@ -1,0 +1,129 @@
+@import "./../../App-styles.scss";
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: $backgroundDark;
+  border-bottom-width: 0;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-width: 0;
+
+  &__logo {
+    padding: 16px 0;
+  }
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      list-style: none;
+    }
+    ul li {
+      display: inline;
+    }
+    a {
+      color: $fontWhite;
+      text-decoration: none;
+      padding: 16px;
+    }
+    a:hover {
+      color: $accentGreen;
+    }
+    a:active {
+      color: $accentGreen;
+    }
+  }
+  &__button {
+    color: $fontWhite;
+    border: 2px solid $accentGreen;
+    border-radius: 383px;
+    width: 156px;
+    height: 48px;
+    background-color: $backgroundDark;
+    transition: all 1s;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  &__button:hover {
+    background-color: $accentGreen;
+    color: $fontDarkButton;
+  }
+  &__contact-icon {
+    display: none;
+    width: 24px;
+    height: 24px;
+  }
+  &__menu-icon {
+    display: none;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    display: block;
+  }
+
+  .header__nav ul {
+    display: none;
+  }
+  .header__nav {
+    display: none;
+  }
+
+  .header__contact-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: 24px;
+  }
+  .header__menu-icon {
+    display: block;
+  }
+  .header__button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    display: block;
+  }
+
+  .header__nav ul {
+    display: none;
+  }
+  .header__nav {
+    display: none;
+  }
+
+  .header__contact-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: 24px;
+  }
+  .header__menu-icon {
+    display: block;
+  }
+  .header__button {
+    display: none;
+  }
+}
