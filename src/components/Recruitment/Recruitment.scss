@@ -1,1 +1,130 @@
 @import "./../../App-styles.scss";
+
+.recruitment {
+  background-color: $backgroundLightGrey;
+  padding: 100px 0;
+  position: relative;
+
+  &__info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 320px;
+
+    &-headline {
+      width: 45%;
+    }
+    h2 {
+      @include darkHeadline;
+    }
+
+    &-text {
+      width: 55%;
+      padding: 0 10px;
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+
+    &-item1 {
+      width: 50%;
+      height: 457px;
+
+      border-radius: 16px;
+      padding: 16px 0 0 24px;
+      background: linear-gradient(0deg, #ffffff, #ffffff),
+        linear-gradient(117.15deg, #1bd1fc 0%, #316dd1 100%);
+      box-shadow: 0px 32px 16px rgba(0, 0, 0, 0.09),
+        0px 16px 8px rgba(0, 0, 0, 0.09), 0px 8px 4px rgba(0, 0, 0, 0.09),
+        0px 4px 2px rgba(0, 0, 0, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.09);
+
+      &-image {
+        background-image: url(./../../images/theOne.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-position: 90% 85%;
+      }
+
+      &-headline {
+        width: 50%;
+
+        span {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 110%;
+          color: #545460;
+        }
+        h2 {
+          color: #202523;
+          font-weight: 800;
+          font-size: 36px;
+          line-height: 110%;
+          letter-spacing: -1px;
+        }
+      }
+      &-text {
+        width: 60%;
+      }
+    }
+    &-item2 {
+      width: 50%;
+      height: 457px;
+      padding: 16px 6px 0 24px;
+
+      background: linear-gradient(0deg, #ffffff, #ffffff),
+        linear-gradient(117.15deg, #1bd1fc 0%, #316dd1 100%);
+      box-shadow: 0px 32px 16px rgba(0, 0, 0, 0.09),
+        0px 16px 8px rgba(0, 0, 0, 0.09), 0px 8px 4px rgba(0, 0, 0, 0.09),
+        0px 4px 2px rgba(0, 0, 0, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.09);
+      border-radius: 16px;
+
+      &-image {
+        background-image: url(./../../images/theTwo.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-position: 90% 85%;
+      }
+      &-headline {
+        width: 50%;
+
+        span {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 110%;
+          color: #545460;
+        }
+        h2 {
+          color: #202523;
+          font-weight: 800;
+          font-size: 36px;
+          line-height: 110%;
+          letter-spacing: -1px;
+        }
+      }
+      &-text {
+        width: 90%;
+        display: flex;
+        gap: 20px;
+      }
+      &-text > * {
+        flex-basis: 100%;
+        margin: 0;
+      }
+    }
+  }
+  &-arrow-wrap img {
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    width: 96vw;
+    display: block;
+    margin: 0 auto;
+  }
+}
