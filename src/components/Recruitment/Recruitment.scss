@@ -2,7 +2,7 @@
 
 .recruitment {
   background-color: $backgroundLightGrey;
-  padding: 100px 0;
+  padding: 80px 0;
   position: relative;
 
   &__info {
@@ -33,7 +33,7 @@
 
     &-item1 {
       width: 50%;
-      height: 457px;
+      height: 500px;
 
       border-radius: 16px;
       padding: 16px 0 0 24px;
@@ -74,7 +74,7 @@
     }
     &-item2 {
       width: 50%;
-      height: 457px;
+      height: 500px;
       padding: 16px 6px 0 24px;
 
       background: linear-gradient(0deg, #ffffff, #ffffff),
@@ -108,14 +108,17 @@
           letter-spacing: -1px;
         }
       }
-      &-text {
-        width: 90%;
-        display: flex;
-        gap: 20px;
-      }
-      &-text > * {
-        flex-basis: 100%;
-        margin: 0;
+      //   &-text {
+      //     width: 90%;
+      //     display: flex;
+      //     gap: 20px;
+      //   }
+      //   &-text > * {
+      //     flex-basis: 100%;
+      //     margin: 0;
+      //   }
+      &-text p {
+        columns: 2;
       }
     }
   }
@@ -126,5 +129,44 @@
     width: 96vw;
     display: block;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .recruitment__info {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .recruitment__info-headline {
+    width: 100%;
+  }
+  .recruitment__info-headline h2 {
+    font-size: 32px;
+    line-height: 110%;
+  }
+  .recruitment__info-text {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+  }
+  .recruitment__info-text > * {
+    flex-basis: 100%;
+  }
+  .recruitment__cards-item1-headline,
+  .recruitment__cards-item2-headline {
+    width: 90%;
+  }
+  .recruitment__cards-item1-headline h2 {
+    font-size: 32px;
+  }
+  .recruitment__cards-item2-headline h2 {
+    font-size: 32px;
+  }
+
+  .recruitment__cards-item1-text,
+  .recruitment__cards-item2-text {
+    width: 90%;
+  }
+  .recruitment__cards-item2-text :nth-child(2) {
+    display: none;
   }
 }
