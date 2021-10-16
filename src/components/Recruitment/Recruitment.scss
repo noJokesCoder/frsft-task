@@ -20,7 +20,7 @@
     }
 
     &-text {
-      width: 55%;
+      width: 50%;
       padding: 0 10px;
     }
   }
@@ -125,11 +125,14 @@
   &-arrow-wrap img {
     position: absolute;
     z-index: 2;
-    bottom: 20px;
-    width: 96vw;
+    bottom: 10px;
+    width: 90vw;
     display: block;
-    margin: 0 auto;
+    margin: 0 5vw;
   }
+}
+.carousel-wrap {
+  display: none;
 }
 @media screen and (max-width: 768px) {
   .recruitment__info {
@@ -168,5 +171,100 @@
   }
   .recruitment__cards-item2-text :nth-child(2) {
     display: none;
+  }
+  .carousel-wrap {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .recruitment {
+    padding: 64px 0;
+  }
+  .recruitment__info-headline h2 {
+    margin: 0;
+    padding-bottom: 24px;
+  }
+  .recruitment__info-text {
+    flex-direction: column;
+  }
+  .recruitment__info-text p {
+    margin: 0;
+  }
+  .recruitment__cards {
+    display: none;
+  }
+  .carousel-wrap {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .card-one,
+  .card-two {
+    width: 96%;
+    height: 480px;
+    margin: 0 auto;
+
+    border-radius: 16px;
+    padding: 24px;
+    background: linear-gradient(0deg, #ffffff, #ffffff),
+      linear-gradient(117.15deg, #1bd1fc 0%, #316dd1 100%);
+  }
+  .card-one h2,
+  .card-two h2 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: -1px;
+    color: #202523;
+  }
+  .card-one span,
+  .card-two span {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 110%;
+    color: #545460;
+  }
+  .card-one-headline,
+  .card-two-headline {
+    text-align: left;
+  }
+  .card-one-text,
+  .card-two-text {
+    text-align: left;
+  }
+  .card-one-image {
+    background-image: url(./../../images/theOne.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    width: 100%;
+    height: 100%;
+    background-position: 40% 100%;
+  }
+  .card-two-image {
+    background-image: url(./../../images/theTwo.png);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    width: 100%;
+    height: 100%;
+    background-position: 40% 100%;
+  }
+  .carousel-status {
+    display: none;
+  }
+  .thumbs-wrapper.axis-vertical {
+    display: none;
+  }
+  .recruitment-arrow-wrap img {
+    position: absolute;
+    z-index: 2;
+    bottom: 30px;
+    width: 90vw;
+    height: 10vh;
+    display: block;
+    margin: 0 5vw;
   }
 }

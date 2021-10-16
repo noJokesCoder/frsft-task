@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 //import styles and image
@@ -23,7 +24,7 @@ export const NavBar = () => {
                 <a href="#">Services</a>
               </li>
               <li>
-                <a href="#">Blog</a>
+                <a href="#s">Blog</a>
               </li>
               <li>
                 <a href="#">Career</a>
