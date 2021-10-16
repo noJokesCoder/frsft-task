@@ -74,6 +74,40 @@ export const Cards = () => {
             </ul>
           </div>
         </div>
+        <div className="carousel-cards-wrap">
+          <Carousel>
+            <div className="carousel-card">
+              <div className="carousel-card-img">
+                <img src={youGet} />
+              </div>
+              <h3>You will get</h3>
+              <ul>
+                <li>The fast feedback on every stage of the recruitment</li>
+                <li>Timesaving productive interviews</li>
+                <li>
+                  Opportunity to get acquainted with the future project, your
+                  team colleagues, and CEO in advance chance of receiving the
+                  job offer on the same day of your interview
+                </li>
+              </ul>
+            </div>
+            <div className="carousel-card">
+              <div className="carousel-card-img">
+                <img src={youDont} />
+              </div>
+              <h3>You will not get</h3>
+              <ul>
+                <li>Huge exhausted free tests</li>
+                <li>
+                  Long-awaited pauses in communication with us multiple
+                  interviews from our side
+                </li>
+                <li>Bullshit</li>
+                <li>Harassment</li>
+              </ul>
+            </div>
+          </Carousel>
+        </div>
       </div>
     </section>
   );
