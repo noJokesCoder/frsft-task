@@ -6,6 +6,7 @@ import { HeaderText } from "./components/header-text/Header";
 import { Grid } from "./components/Grid/Grid";
 import { About } from "./components/About/About";
 import { Recruitment } from "./components/Recruitment/Recruitment";
+import { Cards } from "./components/Cards/Cards";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Grid />
       <About />
       <Recruitment />
+      <Cards />
     </div>
   );
 }
