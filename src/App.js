@@ -7,6 +7,7 @@ import { Grid } from "./components/Grid/Grid";
 import { About } from "./components/About/About";
 import { Recruitment } from "./components/Recruitment/Recruitment";
 import { Cards } from "./components/Cards/Cards";
+import { Vacancies } from "./components/Vacancies/Vacancies";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Recruitment />
       <Cards />
+      <Vacancies />
     </div>
   );
 }

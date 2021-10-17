@@ -1,0 +1,115 @@
+@import "./../../App-styles.scss";
+
+@mixin formElementStyle {
+  background-color: $backgroundDark;
+  border: 0;
+  border-bottom: 1px solid grey;
+  width: 25%;
+  color: $fontWhite;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.vacancies {
+  width: 100%;
+  height: 390px;
+  background-color: $backgroundDark;
+}
+.vacancies h2 {
+  margin: 0;
+  padding: 100px 0 80px 0;
+  color: $fontWhite;
+  font-weight: 900;
+  font-size: 62px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -1px;
+}
+#data {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 80px;
+}
+.vacancies input[type="text"] {
+  @include formElementStyle;
+}
+#vacancies {
+  @include formElementStyle;
+}
+#office {
+  @include formElementStyle;
+}
+.btnSubmit {
+  background-color: $backgroundDark;
+  margin: 0;
+  padding: 10px;
+  border: none;
+}
+//style for departments
+
+.departments--wrap {
+  background-color: $backgroundWhiter;
+  backdrop-filter: blur(150px);
+
+  height: 1222px;
+}
+.departments {
+  display: flex;
+  flex-direction: column;
+}
+.departments__headline {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  color: #333333;
+}
+.departments__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: wrap;
+  gap: 24px;
+}
+.card {
+  width: 400px;
+  height: 150px;
+  padding: 32px 30px;
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.09), 0px 6px 8px rgba(0, 0, 0, 0.09),
+    0px 4px 4px rgba(0, 0, 0, 0.09), 0px 2px 2px rgba(0, 0, 0, 0.09),
+    0px 1px 1px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+}
+.card h4 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  color: #545460;
+  width: 50%;
+}
+.card p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 110%;
+  color: #545460;
+}
+
+.departments__btn {
+  width: 404px;
+  height: 73px;
+  margin: 56px auto;
+  background-color: $accentGreen;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.09), 0px 6px 8px rgba(0, 0, 0, 0.09),
+    0px 4px 4px rgba(0, 0, 0, 0.09), 0px 2px 2px rgba(0, 0, 0, 0.09),
+    0px 1px 1px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  border: none;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 120%;
+}
