@@ -1,0 +1,86 @@
+@import "./../../App-styles.scss";
+
+@mixin footerFont {
+  color: #a4afc1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 155%;
+}
+
+footer {
+  background: #000000;
+  height: 73px;
+  width: 100%;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 73px;
+
+  &__copy {
+    @include footerFont;
+  }
+  &__nav a {
+    @include footerFont;
+    padding: 0 32px;
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+  &__nav a:hover {
+    color: $accentGreen;
+  }
+  &__social {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__social > img {
+    background-color: none;
+  }
+  &__social img:hover {
+    background-color: blue;
+    border-radius: 8px;
+    padding: 2px;
+    transform: perspective(100px) translateZ(15px);
+    transition: 100ms ease-in-out;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__copy {
+    width: 200px;
+  }
+  .footer__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    order: 3;
+  }
+  .footer__nav a {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  footer {
+    background: #000000;
+    height: 160px;
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer__copy {
+    width: 100%;
+  }
+  .footer__nav {
+    width: 100%;
+    order: 2;
+  }
+  .footer__social {
+    order: 3;
+  }
+}

@@ -67,6 +67,9 @@
   .carousel-status {
     display: none;
   }
+  .control-dots > .dot.selected {
+    background-color: $accentGreen;
+  }
 }
 @media screen and (max-width: 375px) {
   .perks__grid {
