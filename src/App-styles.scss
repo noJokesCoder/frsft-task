@@ -6,6 +6,7 @@ $backgroundLightGrey: rgba(213, 212, 217, 1);
 $backgroundDarkGrey: rgba(174, 169, 168, 1);
 
 @mixin darkHeadline {
+  font-family: "Helvetica Now";
   font-weight: 900;
   font-size: 62px;
   line-height: 90%;
@@ -24,12 +25,21 @@ $backgroundDarkGrey: rgba(174, 169, 168, 1);
 $fontWhite: #ffffff;
 $fontDarkButton: #020213;
 
-// TODO fix fonts!!!
-// @font-face {
-//   font-family: Helvetica Now;
-//   src: url(./font/Monotype\ \ -\ Helvetica\ Now\ Display.otf);
-
-// }
+@font-face {
+  font-family: "Helvetica Now";
+  font-weight: normal;
+  src: url("./font/Helvetica\ Now\ Text\ Medium.otf");
+}
+@font-face {
+  font-family: "Helvetica Now";
+  font-weight: lighter;
+  src: url("./font/Helvetica\ Now\ Text\ ExtraLight.otf");
+}
+@font-face {
+  font-family: "Helvetica Now";
+  font-weight: bold;
+  src: url("./font/Helvetica\ Now\ Text\ ExtraBold.otf");
+}
 
 * {
   box-sizing: border-box;
@@ -39,6 +49,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  font-family: "Helvetica Now";
 }
 
 .container {
@@ -49,6 +60,7 @@ body {
 }
 
 h1 {
+  font-family: "Helvetica Now";
   font-size: 54px;
   color: $fontWhite;
   margin: 0;
