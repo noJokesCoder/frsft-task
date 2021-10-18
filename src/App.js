@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./App-styles.scss";
 //components
 import { NavBar } from "./components/nav-bar/Nav-bar";
@@ -8,6 +8,7 @@ import { About } from "./components/About/About";
 import { Recruitment } from "./components/Recruitment/Recruitment";
 import { Cards } from "./components/Cards/Cards";
 import { Vacancies } from "./components/Vacancies/Vacancies";
+import { FormSubmit } from "./components/Form-application/Form";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Recruitment />
       <Cards />
       <Vacancies />
+      <FormSubmit />
     </div>
   );
 }
