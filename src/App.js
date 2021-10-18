@@ -9,6 +9,7 @@ import { Recruitment } from "./components/Recruitment/Recruitment";
 import { Cards } from "./components/Cards/Cards";
 import { Vacancies } from "./components/Vacancies/Vacancies";
 import { FormSubmit } from "./components/Form-application/Form";
+import { Perks } from "./components/Perks/Perks";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Cards />
       <Vacancies />
       <FormSubmit />
+      <Perks />
     </div>
   );
 }
