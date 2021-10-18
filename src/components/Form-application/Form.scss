@@ -1,6 +1,7 @@
 @import "./../../App-styles.scss";
 .form {
   padding: 40px 0 100px 0;
+
   &__wrapper {
     display: flex;
     gap: 98px;
@@ -47,8 +48,7 @@
     }
     textarea {
       margin: 0;
-      width: 100%;
-      //   height: 24px;
+      width: 100;
       font-size: 16px;
       line-height: 24px;
       border: none;
@@ -73,5 +73,76 @@
       border-radius: 8px;
       cursor: pointer;
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  .form {
+    margin-top: 400px;
+  }
+  .form__wrapper {
+    flex-direction: column;
+  }
+  .form__headline {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 64px;
+  }
+  .form__headline h3 {
+    font-size: 32px;
+    width: 50%;
+  }
+  .form__headline p {
+    font-size: 16px;
+    width: 50%;
+  }
+  .form__application textarea {
+    width: 100%;
+  }
+  .form__application-btn {
+    margin: 0px auto;
+    width: 75%;
+    height: 59px;
+    align-self: flex-end;
+  }
+}
+@media screen and (max-width: 375px) {
+  .form {
+    margin-top: 1250px;
+    padding: 60px 0 40px 0;
+  }
+  .form__wrapper {
+    gap: 32px;
+  }
+  .form__headline {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
+  .form__headline h3 {
+    font-size: 32px;
+    width: 100%;
+    padding: 0;
+  }
+  .form__headline p {
+    font-size: 16px;
+    width: 100%;
+  }
+  .form__application input[type="text"] {
+    width: 100%;
+  }
+  .form__application input[type="email"] {
+    width: 100%;
+  }
+  .form__application textarea {
+    width: 100%;
+  }
+  .form__application-btn {
+    width: 100%;
   }
 }

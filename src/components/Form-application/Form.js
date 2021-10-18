@@ -39,7 +39,7 @@ export const FormSubmit = () => {
               type="email"
               name="aplicants email"
               id="aplicantsEmail"
-              placeholder="email"
+              placeholder="Email"
               required
             />
             <textarea
