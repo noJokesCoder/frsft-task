@@ -11,13 +11,13 @@
 }
 .slideUp {
   background-attachment: scroll;
-  overflow: auto;
+  overflow: hidden;
   background-clip: border-box;
   padding-bottom: 16px;
 }
 .slideDown {
   background-attachment: scroll;
-  overflow: auto;
+  overflow: hidden;
   padding-bottom: 16px;
   transform: scroll(100px);
   transition: all 2s;
