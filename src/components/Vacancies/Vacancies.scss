@@ -113,3 +113,66 @@
   font-size: 16px;
   line-height: 120%;
 }
+@media screen and (max-width: 768px) {
+  .departments__cards {
+    justify-content: flex-start;
+  }
+  .card {
+    width: 48%;
+  }
+  .departments__btn {
+    width: 28%;
+    height: 3.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .vacancies h2 {
+    margin: 0;
+    padding: 64px 0 24px 0;
+    color: $fontWhite;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+  #data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 40px;
+  }
+  .vacancies input[type="text"] {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  #vacancies {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  #office {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .btnSubmit {
+    width: 100%;
+    height: 60px;
+    background-color: $backgroundDark;
+    margin: 0;
+    padding: 10px;
+    border: none;
+  }
+  .card {
+    width: 100%;
+    padding: 1rem;
+  }
+  .departments__btn {
+    width: 100%;
+    height: 3.5rem;
+  }
+}
