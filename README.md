@@ -9,7 +9,7 @@
 | **Tablet** | ✅  YES  |
 | **Desktop** | ✅  YES |
 
-The tech-stack used for the logIn form:
+The tech-stack:
 - Webpack (bootstraped by npx create-react-app)
 - Firebase (hosting)
 - React (no JS logic under the hood, only JSX layout!)
